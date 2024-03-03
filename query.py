@@ -184,7 +184,7 @@ if __name__ == '__main__':
     print(precision_score)
 
     while precision_score < float(precision):
-        if float(precision) <= 0.000001:
+        if float(precision_score) <= 0.000001:
             print("The precision reaches 0. Program terminated.")
             sys.exit()
         inverted_list = search_api.build_inverted_list(labeled_results)
